@@ -1,0 +1,80 @@
+body {
+  min-width: 400px;
+  color: snow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #123, #111);
+}
+
+.app-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.weather {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid azure;
+  border-radius: 20px;
+  background: radial-gradient(#ff1493, #111111);
+}
+.weather:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.weather__location {
+  margin-bottom: 20px;
+}
+.weather__location span {
+  font-weight: 700;
+}
+.weather__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+.weather__right-half {
+  float: right;
+  width: 240px;
+}
+.weather__info button {
+  display: block;
+  margin-bottom: 18px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: snow;
+  transition: transform .3s;
+}
+.weather__info button:hover {
+  background-color: lightblue;
+}
+.weather__info button:active {
+  transform: translateY(2px);
+}
+.weather__info .temp {
+  position: relative;
+  margin-left: 28px;
+}
+.weather__info .temp:after {
+  position: absolute;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://image.flaticon.com/icons/svg/346/346105.svg");
+  content: "";
+}
+
+.tip {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+}

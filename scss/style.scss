@@ -1,0 +1,93 @@
+body {
+  min-width: 400px;
+  color: snow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #123, #111);
+}
+
+.app-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.weather {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid azure;
+  border-radius: 20px;
+  background: radial-gradient(deeppink, #111);
+  
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  
+  &__location {
+    margin-bottom: 20px;
+    
+    span {
+      font-weight: 700;
+    }
+  }
+  
+  &__icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+  }
+  
+  &__right-half {
+    float: right;
+    width: 240px;
+  }
+  
+  &__info {
+    
+    button {
+      display: block;
+      margin-bottom: 18px;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      background-color: snow;
+      transition: transform .3s;
+      
+      &:hover {
+        background-color: lightblue;
+      }
+      
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+    
+    .temp {
+      position: relative;
+      margin-left: 28px;
+      
+      &:after {
+        position: absolute;
+        left: -30px;
+        width: 20px;
+        height: 20px;
+        background-image: url("https://image.flaticon.com/icons/svg/346/346105.svg");
+        content: "";
+      }
+    }
+  }
+}
+
+.tip {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+}
